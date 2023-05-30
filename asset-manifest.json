@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sabyaport-test/static/css/main.f8ca7fe8.css",
+    "main.js": "/sabyaport-test/static/js/main.d35c5b06.js",
+    "static/media/b.png": "/sabyaport-test/static/media/b.6bb6424ed1fd58cc8242.png",
+    "static/media/a.png": "/sabyaport-test/static/media/a.f8ee49e8591d2e9cc9a5.png",
+    "static/media/s.png": "/sabyaport-test/static/media/s.7832bc1fee8e0a3c4e0b.png",
+    "index.html": "/sabyaport-test/index.html",
+    "main.f8ca7fe8.css.map": "/sabyaport-test/static/css/main.f8ca7fe8.css.map",
+    "main.d35c5b06.js.map": "/sabyaport-test/static/js/main.d35c5b06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8ca7fe8.css",
+    "static/js/main.d35c5b06.js"
+  ]
+}
