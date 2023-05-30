@@ -1,13 +1,322 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav__bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 8px 10%;
+    height: 10vh;
+    background-color: white;
+    z-index: 999;
+}
+.nav__items
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 27%;
+}
+.nav__item,.nav__item:hover
+{
+    text-decoration: none;
+    font-size: 17px;
+    color: #b074e4;
+    font-weight: 100;
+}
+.nav__item:hover
+{
+    color: #3a006c;
+}
+.active
+{
+    border-bottom: 2px solid #3a006c;
+    color: #3a006c;
+    font-weight: 500;
+}
+.footer
+{
+    height: 4vh;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #7C569E ;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main__common
+{
+    display: flex;
+    justify-content: space-around;
+    height: 86vh;
+    align-items: center;
+    margin-top: 10vh ;
+}
+.btn__common
+{
+    background-color: transparent;
+    border: 2px solid #6a428e;
+    padding: 10px 40px;
+    color: #5a317e;
+    border-radius: 50px;
+}
+.btn__common:hover{
+    background-color: #5a317e;
+    color: white;
+}
+
+.common__div1>p
+{
+    color: #0000009f;
+    font-size: 18px;
+}
+.myname
+{
+    color: #3a006cb0;
+    font-size: 50px;
+}
+.common__div2>img{
+    filter: drop-shadow(5px 8px 7px #464646);
+}
+
+.form__div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15vh;
+    height: 70vh;
+    width: 45%;
+}
+.btn__submit
+{
+    background-color: transparent;
+    border: 2px solid #1976D2;
+    color: #1976D2;
+    border-radius: 5px;
+    width: 25%;
+}
+.btn__submit:hover{
+    background-color: #1976D2;
+    color: white;
+}
+.animated
+{
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes up-down
+{
+    0%
+    {
+        transform: translateY(10px);
+    }
+    100%
+    {
+        transform: translateY(-10px);
+    }
+}
+.service__main
+{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.card__div
+{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin: 0px 20px;
+}
+.nav__item>.nav_icons
+{
+    display: none;
+}
+/*.nav__item>.icon-text
+{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 426px)
+{
+    .form__div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20vh;
+        width: 90%;
+    }
+    .btn__submit
+    {
+        width: 75%;
+    }
+    .nav__bar>img {
+        width: 150px;
+    }
+    .nav__bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        padding: 10px 30px;
+    }
+    .nav__items
+    {
+        margin-top: 10px ;
+        padding-top: 10px;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 3px solid rgba(128, 128, 128, 0.1);
+    }
+    .footer
+    {
+        font-size: 7px;
+        height: 2vh;
+    }
+    .main__common
+    {
+        flex-direction: column;
+        margin-top: 16vh;
+        text-align: center;
+        height: 84vh;
+    }
+    .common__div2>img{
+        width: 250px;
+    }
+    .common__div1>h1
+    {
+        font-size: 25px;
+    }
+    .common__div1>p{
+        font-size: 10px;
+    }
+    .btn__common
+    {
+        font-size: 10px;
+        padding: 5px 30px ;
+    }
+    .card__div{
+        grid-template-columns: auto;
+        gap: 5px 5px;
+        width: 80%;
+        margin: auto;
+    }
+    .nav__item>.nav_icons
+    {
+        display: block;
+    }
+    .nav__item>.icon-text
+    {
+        display: none;
+    }
+}
+@media(min-width :426px ) and (max-width : 770px )
+{
+    .form__div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 20vh;
+        width: 90%;
+    }
+    .btn__submit
+    {
+        width: 50%;
+    }
+    .nav__bar>img {
+        width: 180px;
+    }
+    .nav__bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 15vh;
+        padding: 8px 20px;
+    }
+    .nav__items
+    {
+        margin-top: 10px ;
+        padding-top: 10px;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 3px solid rgba(128, 128, 128, 0.1);
+    }
+    .footer
+    {
+        font-size: 10px;
+        height: 3vh;
+    }
+    .main__common
+    {
+        flex-direction: column;
+        margin-top: 25vh;
+        text-align: center;
+    }
+    .common__div2>img{
+        width: 300px;
+    }
+    .card__div{
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+}
+@media(min-width :771px ) and (max-width : 1200px )
+{
+    .form__div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 15vh;
+        width: 60%;
+    }
+    .btn__submit
+    {
+        
+        width: 50%;
+    }
+    .nav__items
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .nav__bar>img {
+        width: 200px;
+    }
+    .common__div2>img{
+        width: 360px;
+    }
+    .card__div{
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
 }
